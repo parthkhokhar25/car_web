@@ -1,0 +1,23 @@
+.icon {
+    position: relative;
+    bottom: 11px
+    }
+    .profile img {
+    width: 68px;
+    height: 68px;
+    border-radius: 50%
+    }
+    .card {
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2)
+    }
+    .card-body {
+    position: relative;
+    bottom: 35px
+    }
+    .header {
+    padding-top: 40px
+    }
+    

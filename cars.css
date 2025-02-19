@@ -1,0 +1,29 @@
+.wrapper {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.page-link {
+    position: relative;
+    display: block;
+    color: #673AB7 !important;
+    text-decoration: none;
+    background-color: rgb(252, 252, 252);
+    border: 1px solid #022c69 !important
+}
+
+.page-link:hover,
+.page-link.active{
+    z-index: 2;
+    color: rgb(0, 0, 0) !important;
+    background-color: #511ea8;
+    border-color: #00080a;
+}
+
+.page-link:focus {
+    z-index: 3;
+    outline: 0;
+    box-shadow: 0 4px
+}

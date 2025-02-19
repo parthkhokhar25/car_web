@@ -1,0 +1,6 @@
+ <button class="btn btn-primary" style="margin-right:1%;"><a href="login.php"
+                        class="text-decoration-none" style="color:aliceblue;">Login</a></button>
+
+
+<button class="btn btn-success"><a href="register.php" class="text-decoration-none"
+                        style="color:aliceblue;">Register Here</a></button>

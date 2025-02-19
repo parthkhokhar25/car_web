@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      .text-danger {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="mb-3">
+        <label for="recipient-name" class="col-form-label">Name</label>
+        <input
+          type="text"
+          id="recipient-name"
+          name="nm"
+          class="form-control"
+          value="<?php echo $row['name'];?>"
+        />
+        <div id="name-error" class="text-danger" style="display: none">
+          Name is required
+        </div>
+      </div>
+      <button type="button" id="submit-btn" class="btn btn-primary">
+        Submit
+      </button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#submit-btn").click(function () {
+          // Get the value of the input field
+          var nameValue = $("#recipient-name").val().trim();
+
+          // Check if the value is empty
+          if (nameValue === "") {
+            // Show the error message
+            $("#name-error").show();
+          } else {
+            // Hide the error message
+            $("#name-error").hide();
+
+            // Optionally, submit the form or perform other actions here
+            alert("Form submitted successfully"); // This is just a placeholder
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
